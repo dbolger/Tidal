@@ -92,7 +92,7 @@ opacity: 1 !important;
 }
 
 /* Remove defined line spacing and letter spacing in headers */
-h1, ._5acabdea2ee35e177c1df2bfde71d869-scss {
+h1 {
     letter-spacing: unset !important;
     padding: 0.2em 0px !important
 }
@@ -108,10 +108,41 @@ h1, ._5acabdea2ee35e177c1df2bfde71d869-scss {
 display: none !important;
 }
 
+/* Display page name at the top bar at all times */
+section > div._4c3b6e4e88112fc8ef88512cbe7521ed-scss.da51a6e223c7200d373a2fd0614d7c33-scss > div:not([class]), section > div > div._4c3b6e4e88112fc8ef88512cbe7521ed-scss.da51a6e223c7200d373a2fd0614d7c33-scss.b922193db5f1fbddd0ac1467645b8194-scss > div:not([class]) {
+/*section:not[role="grid"] > div > div > div:not([class]), section > div > div:not([class]) { */
+display: none !important;
+}
+
+/* Remove play button from header */
+header button.e8b2fe03d4e4726484b879ed8ff6f096-scss {
+display: none !important;
+}
+
+/* Remove transition from header text */
+._5acabdea2ee35e177c1df2bfde71d869-scss {
+transition: unset !important;
+}
+
+/* Remove leftover margin space from forward button */
+header button.e228f25654282e1c84018873fefaa148-scss {
+margin-right: unset !important;
+}
+
+/* Adjust search bar for margin space removed from forward button */
+._293772bde87b2e2c11b41d9a0bf25395-scss {
+margin-left: 16px !important;
+}
+
 /* Remove background gradient from artist/playlist page */
 ._59ed5f1313c7c4b211995d2b6463683f-scss, ._898a0ac18270b333d95d8402650e2c46-scss, ._1066d722d4c5fe45076daa358de0a969-scss {
     background-color: unset !important;
 background: unset !important;
+}
+
+/* Set background color of artist page */
+.a232f016804d04ce9c5bbfd1a5e00d54-scss {
+background-color: var(--modspotify_main_bg) !important;
 }
 
 /* Remove playlist art box shadow */
@@ -224,11 +255,6 @@ color: black !important;
 background: var(--modspotify_sidebar_and_player_bg) !important;
 }
 
-/* Change labels from uppercase to capitalize */
-._61f284de1c56917f93c55a3ae121ba1c-scss {
-    text-transform: capitalize !important;
-}
-
 /* Set private session labels and images to appropriate colors */
 ._468cbcb83a67b071632b5f31d2210c1b-scss, ._3ce917a66aee890dcea323f7aaeb1a87-scss {
 color: var(--modspotify_sidebar_and_player_bg) !important;
@@ -237,5 +263,22 @@ color: var(--modspotify_sidebar_and_player_bg) !important;
 /* Set the equalizer GIF to a custom image with corrected color */
 ._5814e6eb4f933d11bfa18c01b92eff76-scss {
 content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif") !important;
+}
+
+/* Set the following button to be blue when user is following */
+._888a8dffe06d27b161f0258c2769069e-scss {
+    color: #00ffff !important;
+    border: 1px solid #00ffff !important;
+}
+
+/* Set the artist page ranking colors */
+._57c8638c60e4f0d0639368c2ca228730-scss {
+color: black !important;
+background: white !important;
+}
+
+/* Adjust the top sorting bar on playlists and albums to fit the width */
+._2dc8cce76d72af90f5e00e781db42541-scss {
+margin: 0 -34px 16px !important;
 }
 
