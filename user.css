@@ -16,7 +16,7 @@
  */
 
 /* Set the font to Nationale if the system has it installed. Otherwise, rely on Spotify's default font */
-*, body {
+*, body, button, input {
     font-family: Nationale, spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
 }
 
@@ -25,32 +25,21 @@
 height: 96px !important;
 }
 
-/* Set the background color to main content */
-.Root__main-view, .b1b53e70887a91051a9d7dc85160fc6b-scss, ._235729a60d5e265806e8509d8633b779-scss {
-background-color: var(--modspotify_main_bg) !important;
-}
-
-/* Set player color */
-._82a78ff58d3fcba0cb9b8083fe6dd05c-scss {
-    background-color: var(--modspotify_sidebar_and_player_bg) !important;
-}
-
-/* Hide scrollbars from sight */
 .os-theme-spotify>.os-scrollbar-vertical, .os-theme-spotify>.os-scrollbar-horizontal {
 height: 0px !important;
 width: 0px !important;
        background-color: transparent !important;
 }
 
-/* Light grey on hover over button */
-.player-controls__buttons > button:hover, .ddd8cad9b1eaa2858b617dd9cb8bf222-scss > button:hover, .bd8e0a9d1a2d5e35b1ae9b5e1a08237c-scss > button:hover {
+/* Light grey on hover over player button */
+.player-controls__buttons > button:hover {
 cursor: pointer !important;
-color: var(--modspotify_secondary_fg) !important;
+color: #9898A6 !important;
 }
 
 /* Make buttons clicky (and various other small changes */
 /* - Now Playing bar player buttons */
-.player-controls__buttons > button, .ddd8cad9b1eaa2858b617dd9cb8bf222-scss > button, .bd8e0a9d1a2d5e35b1ae9b5e1a08237c-scss > button {
+.player-controls__buttons > button {
 cursor: pointer !important;
 color: white !important;
        background-color: transparent !important;
@@ -68,6 +57,7 @@ cursor: pointer !important;
 
 /* - Context menu buttons */
 ul > li > a, ul > li > button, button > ul > li > button, li > div > a {
+color: var(--spice-text) !important;
 cursor: pointer !important;
         text-decoration: none !important;
 }
@@ -78,17 +68,15 @@ cursor: pointer !important;
 }
 
 /* Fix coloring on hover of main content */
-._7ae3a7b5ef70bce1740ff486c4467d56-scss {
+.main-home-homeHeader {
     background-color: transparent !important;
     background-image: none !important;
 }
 
 /* Fix top bar coloring to match UI background */
-._2411182f42f92a221e29c993de036981-scss {
-    background-color: var(--modspotify_sidebar_and_player_bg) !important;
-}
-._7f29d1db930e7882d0ee6099f36e3bc7-scss {
-opacity: 1 !important;
+.main-topBar-background {
+    background-color: var(--spice-sidebar) !important;
+    opacity: 1 !important;
 }
 
 /* Remove defined line spacing and letter spacing in headers */
@@ -100,53 +88,48 @@ h1 {
 /* Set line height in Liked Songs content box
  * (unset doesn't work correctly here) */
 ._4927510282dae1bd4bce47f1df0bc361-scss {
-    line-height: 42px !important;
+/*    line-height: 42px !important; */
 }
 
 /* Hide device playing bar */
-._3a923fa2dfd1f66547507cb7a617062d-scss {
+.main-connectBar-connectBar {
 display: none !important;
 }
 
 /* Display page name at the top bar at all times */
-section > div._4c3b6e4e88112fc8ef88512cbe7521ed-scss.da51a6e223c7200d373a2fd0614d7c33-scss > div:not([class]), section > div > div._4c3b6e4e88112fc8ef88512cbe7521ed-scss.da51a6e223c7200d373a2fd0614d7c33-scss.b922193db5f1fbddd0ac1467645b8194-scss > div:not([class]) {
+section > div.main-entityHeader-container > div:not([class]), section > div > div.main-entityHeader-container > div:not([class]) {
 /*section:not[role="grid"] > div > div > div:not([class]), section > div > div:not([class]) { */
 display: none !important;
 }
 
 /* Remove play button from header */
-header button.e8b2fe03d4e4726484b879ed8ff6f096-scss {
+header button.main-playButton-PlayButton {
 display: none !important;
 }
 
 /* Remove transition from header text */
-._5acabdea2ee35e177c1df2bfde71d869-scss {
+.main-entityHeader-topbarTitle {
 transition: unset !important;
 }
 
 /* Remove leftover margin space from forward button */
-header button.e228f25654282e1c84018873fefaa148-scss {
+header button.main-topBar-forward {
 margin-right: unset !important;
 }
 
 /* Adjust search bar for margin space removed from forward button */
-._293772bde87b2e2c11b41d9a0bf25395-scss {
+.x-searchInput-searchInput {
 margin-left: 16px !important;
 }
 
 /* Remove background gradient from artist/playlist page */
-._59ed5f1313c7c4b211995d2b6463683f-scss, ._898a0ac18270b333d95d8402650e2c46-scss, ._1066d722d4c5fe45076daa358de0a969-scss {
+.main-actionBarBackground-background, .main-entityHeader-backgroundColor { 
     background-color: unset !important;
 background: unset !important;
 }
 
-/* Set background color of artist page */
-.a232f016804d04ce9c5bbfd1a5e00d54-scss {
-background-color: var(--modspotify_main_bg) !important;
-}
-
 /* Remove playlist art box shadow */
-._5d10f53f6ab203d3259e148b9f1c2278-scss {
+.main-entityHeader-shadow {
     -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
     border-radius: 3px !important;
@@ -154,14 +137,14 @@ background-color: var(--modspotify_main_bg) !important;
 
 /* Add enabled effect to now playing device button */
 .control-button--active {
-color: var(--modspotify_sidebar_indicator_and_hover_button_bg) !important;
+       color: var(--spice-button-active) !important;
        background-color: rgba(33, 254, 236, 0.16) !important;
        border-radius: 10px !important;
 }
 
 /* Add enabled effect to shuffle button and repeat button */
-._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss[aria-checked="true"], .ebfd411a126f1e7bea6133f21b4ef88e-scss[aria-checked="true"], .ebfd411a126f1e7bea6133f21b4ef88e-scss[aria-checked="mixed"] {
-color: var(--modspotify_sidebar_indicator_and_hover_button_bg) !important;
+.main-shuffleButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="mixed"] {
+       color: var(--spice-button-active) !important;
        background-color: rgba(33, 254, 236, 0.16) !important;
        border-radius: 10px !important;
 }
@@ -178,7 +161,7 @@ display: none !important;
 
 /* Update connect a device screen active device color */
 .connect-device-list-item--active, .connect-device-list-item--active .connect-device-list-item__device-subtitle, .connect-device-list-item--active .connect-device-list-item__icon .device {
-color: var(--modspotify_sidebar_indicator_and_hover_button_bg) !important;
+    color: var(--spice-button-active) !important;
 }
 
 /* Remove connect a device header image */
@@ -194,8 +177,8 @@ border: 2px solid #2a2a2a !important;
 }
 
 /* Correct the active like button color */
-.a65d8d62fe56eed3e660b937a9be8a93-scss {
-color: var(--modspotify_pressing_fg) !important;
+.main-addButton-button {
+color: var(--spice-button-active) !important;
 }
 
 /* Style slider knob */
@@ -216,11 +199,11 @@ cursor: pointer !important;
 
 /* Style volume button to be blue when not muted */ 
 .volume-bar__icon-button[title="Mute"] {
-color: var(--modspotify_pressing_fg) !important;
+color: var(--spice-button-active) !important;
 }
 
 /* Remove dot from shuffle button and repeat button */
-._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss:after, .ebfd411a126f1e7bea6133f21b4ef88e-scss._46e671f2323a45b17a6f4a3d15c2961f-scss:after {
+.main-repeatButton-button.main-repeatButton-on:after, .main-shuffleButton-button.main-shuffleButton-on:after {
 display: none !important;
 }
 
@@ -232,53 +215,47 @@ color: white !important;
 }
 
 /* Set big play button colors */
-._8e7d398e09c25b24232d92aac8a15a81-scss.e8b2fe03d4e4726484b879ed8ff6f096-scss {
+.main-playButton-PlayButton {
 color: black !important;
 }
 
 /* Set profile picture edit radius */
-.da75596ab83a40e107b3f7b595dbb2d8-scss, ._1d71ba21c2abf4a5fa3372749097da09-scss {
+.main-editImageButton-image {
     border-radius: unset !important;
 }
 
 /* Set minimum left side bar width */
-.Root__nav-bar, .a81b8921c08df1bc32cd0c686fa8951a-scss, .f555f5a061389067516970421bc48319-scss, ._4fac214bccd807d7c6fed21d4e0ea6de-scss {
+.main-navBar-navBar {
     min-width: 240px !important;
 }
+
 /* Set the minimum height to fix cover icon in navigation bar */
-._4fac214bccd807d7c6fed21d4e0ea6de-scss {
+.main-coverSlotExpanded-container {
     min-height: 240px !important;
 }
 
-/* Set labels for playlists/albums container color to match UI */
-._83d9fef4ae69148dc1fc9b8323f8528b-scss._2dc8cce76d72af90f5e00e781db42541-scss {
-background: var(--modspotify_sidebar_and_player_bg) !important;
-}
-
-/* Set private session labels and images to appropriate colors */
-._468cbcb83a67b071632b5f31d2210c1b-scss, ._3ce917a66aee890dcea323f7aaeb1a87-scss {
-color: var(--modspotify_sidebar_and_player_bg) !important;
-}
-
 /* Set the equalizer GIF to a custom image with corrected color */
-._5814e6eb4f933d11bfa18c01b92eff76-scss {
+.main-trackList-playingIcon {
 content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif") !important;
 }
 
 /* Set the following button to be blue when user is following */
-._888a8dffe06d27b161f0258c2769069e-scss {
+.show-followButton-isFollowing, .show-followButton-button:hover {
     color: #00ffff !important;
     border: 1px solid #00ffff !important;
 }
 
 /* Set the artist page ranking colors */
-._57c8638c60e4f0d0639368c2ca228730-scss {
+.artist-artistAbout-rank {
+background-color: white !important;
+}
+
+.artist-artistAbout-rank div {
 color: black !important;
-background: white !important;
 }
 
 /* Adjust the top sorting bar on playlists and albums to fit the width */
-._2dc8cce76d72af90f5e00e781db42541-scss {
+.main-trackList-trackListHeader .main-trackList-trackListHeaderStuck {
 margin: 0 -34px 16px !important;
 }
 
