@@ -22,240 +22,240 @@
 
 /* Set the now playing bar to have a 96px height */
 .Root__now-playing-bar {
-height: 96px !important;
+height: 96px;
 }
 
 .os-theme-spotify>.os-scrollbar-vertical, .os-theme-spotify>.os-scrollbar-horizontal {
-height: 0px !important;
-width: 0px !important;
-       background-color: transparent !important;
+height: 0px;
+width: 0px;
+       background-color: transparent;
 }
 
 /* Light grey on hover over player button */
 .player-controls__buttons > button:hover {
-cursor: pointer !important;
-color: #9898A6 !important;
+cursor: pointer;
+color: #9898A6;
 }
 
 /* Make buttons clicky (and various other small changes */
 /* - Now Playing bar player buttons */
 .player-controls__buttons > button {
-cursor: pointer !important;
-color: white !important;
-       background-color: transparent !important;
+cursor: pointer;
+color: white;
+       background-color: transparent;
 }
 
 /* - Progress remaining time button */
 .playback-bar__progress-time {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 /* - Queue, playing device, and full screen buttons */
 .ExtraControls button {
-cursor: pointer !important;
+cursor: pointer;
 }
 
 /* - Context menu buttons */
 ul > li > a, ul > li > button, button > ul > li > button, li > div > a {
-color: var(--spice-text) !important;
-cursor: pointer !important;
-        text-decoration: none !important;
+color: var(--spice-text);
+cursor: pointer;
+        text-decoration: none;
 }
 
 /* - Set every instance of a button to have a pointer cursor */
 button {
-cursor: pointer !important;
+cursor: pointer;
 }
 
 /* Fix coloring on hover of main content */
 .main-home-homeHeader {
-    background-color: transparent !important;
-    background-image: none !important;
+    background-color: transparent;
+    background-image: none;
 }
 
 /* Fix top bar coloring to match UI background */
 .main-topBar-background {
-    background-color: var(--spice-sidebar) !important;
-    opacity: 1 !important;
+    background-color: var(--spice-sidebar);
+    opacity: 1;
 }
 
 /* Remove defined line spacing and letter spacing in headers */
 h1 {
-    letter-spacing: unset !important;
-    padding: 0.2em 0px !important
+    letter-spacing: unset;
+    padding: 0.2em 0px
 }
 
 /* Set line height in Liked Songs content box
  * (unset doesn't work correctly here) */
 ._4927510282dae1bd4bce47f1df0bc361-scss {
-/*    line-height: 42px !important; */
+/*    line-height: 42px; */
 }
 
 /* Hide device playing bar */
 .main-connectBar-connectBar {
-display: none !important;
+display: none;
 }
 
 /* Display page name at the top bar at all times */
 section > div.main-entityHeader-container > div:not([class]), section > div > div.main-entityHeader-container > div:not([class]) {
 /*section:not[role="grid"] > div > div > div:not([class]), section > div > div:not([class]) { */
-display: none !important;
+display: none;
 }
 
 /* Remove play button from header */
 header button.main-playButton-PlayButton {
-display: none !important;
+display: none;
 }
 
 /* Remove transition from header text */
 .main-entityHeader-topbarTitle {
-transition: unset !important;
+transition: unset;
 }
 
 /* Remove leftover margin space from forward button */
 header button.main-topBar-forward {
-margin-right: unset !important;
+margin-right: unset;
 }
 
 /* Adjust search bar for margin space removed from forward button */
 .x-searchInput-searchInput {
-margin-left: 16px !important;
+margin-left: 16px;
 }
 
 /* Remove background gradient from artist/playlist page */
 .main-actionBarBackground-background, .main-entityHeader-backgroundColor { 
-    background-color: unset !important;
-background: unset !important;
+    background-color: unset;
+background: unset;
 }
 
 /* Remove playlist art box shadow */
 .main-entityHeader-shadow {
-    -webkit-box-shadow: unset !important;
-    box-shadow: unset !important;
-    border-radius: 3px !important;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border-radius: 3px;
 }
 
 /* Add enabled effect to now playing device button */
 .control-button--active {
-       color: var(--spice-button-active) !important;
-       background-color: rgba(33, 254, 236, 0.16) !important;
-       border-radius: 10px !important;
+       color: var(--spice-button-active);
+       background-color: rgba(33, 254, 236, 0.16);
+       border-radius: 10px;
 }
 
 /* Add enabled effect to shuffle button and repeat button */
 .main-shuffleButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="mixed"] {
-       color: var(--spice-button-active) !important;
-       background-color: rgba(33, 254, 236, 0.16) !important;
-       border-radius: 10px !important;
+       color: var(--spice-button-active);
+       background-color: rgba(33, 254, 236, 0.16);
+       border-radius: 10px;
 }
 
 /* Add extra spacing between queue and devices buttons */
 .ExtraControls__connect-device-picker {
-    padding-left: 5px !important;
+    padding-left: 5px;
 }
 
 /* Remove dot from queue control button */
 .control-button--active-dot:after {
-display: none !important;
+display: none;
 }
 
 /* Update connect a device screen active device color */
 .connect-device-list-item--active, .connect-device-list-item--active .connect-device-list-item__device-subtitle, .connect-device-list-item--active .connect-device-list-item__icon .device {
-    color: var(--spice-button-active) !important;
+    color: var(--spice-button-active);
 }
 
 /* Remove connect a device header image */
 .connect-header {
-display: none !important;
+display: none;
 }
 
 /* Roundify the now playing cover image and add styling */
 .cover-art .cover-art-image {
-    border-radius: 4px !important;
-border: 2px solid #2a2a2a !important;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px -6px 24px !important;
+    border-radius: 4px;
+border: 2px solid #2a2a2a;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px -6px 24px;
 }
 
 /* Correct the active like button color */
 .main-addButton-button {
-color: var(--spice-button-active) !important;
+color: var(--spice-button-active);
 }
 
 /* Style slider knob */
 .progress-bar__slider {
-right: 5px !important;
-width: 4px !important;
-height: 12px !important;
-        border-radius: 50px !important;
-        box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4) !important;
-transition: opacity .15s ease !important;
-            margin-left: -2px !important;
+right: 5px;
+width: 4px;
+height: 12px;
+        border-radius: 50px;
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
+transition: opacity .15s ease;
+            margin-left: -2px;
 }
 
 /* Style extra slider area to be clicky */
 .progress-bar__fg_wrapper {
-cursor: pointer !important;
+cursor: pointer;
 }
 
 /* Style volume button to be blue when not muted */ 
 .volume-bar__icon-button[title="Mute"] {
-color: var(--spice-button-active) !important;
+color: var(--spice-button-active);
 }
 
 /* Remove dot from shuffle button and repeat button */
 .main-repeatButton-button.main-repeatButton-on:after, .main-shuffleButton-button.main-shuffleButton-on:after {
-display: none !important;
+display: none;
 }
 
 /* Color user button in all states */
 
 button._3e75c7f07bdce28b37b45a5cd74ff371-scss:hover, button._3e75c7f07bdce28b37b45a5cd74ff371-scss {
-    background-color: #242528 !important;
-color: white !important;
+    background-color: #242528;
+color: white;
 }
 
 /* Set big play button colors */
 .main-playButton-PlayButton {
-color: black !important;
+color: black;
 }
 
 /* Set profile picture edit radius */
 .main-editImageButton-image {
-    border-radius: unset !important;
+    border-radius: unset;
 }
 
 /* Set minimum left side bar width */
 .main-navBar-navBar {
-    min-width: 240px !important;
+    min-width: 240px;
 }
 
 /* Set the minimum height to fix cover icon in navigation bar */
 .main-coverSlotExpanded-container {
-    min-height: 240px !important;
+    min-height: 240px;
 }
 
 /* Set the equalizer GIF to a custom image with corrected color */
 .main-trackList-playingIcon {
-content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif") !important;
+content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif");
 }
 
 /* Set the following button to be blue when user is following */
 .show-followButton-isFollowing, .show-followButton-button:hover {
-    color: #00ffff !important;
-    border: 1px solid #00ffff !important;
+    color: #00ffff;
+    border: 1px solid #00ffff;
 }
 
 /* Set the artist page ranking colors */
 .artist-artistAbout-rank {
-background-color: white !important;
+background-color: white;
 }
 
 .artist-artistAbout-rank div {
-color: black !important;
+color: black;
 }
 
 /* Adjust the top sorting bar on playlists and albums to fit the width */
 .main-trackList-trackListHeader .main-trackList-trackListHeaderStuck {
-margin: 0 -34px 16px !important;
+margin: 0 -34px 16px;
 }
 
