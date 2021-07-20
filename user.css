@@ -22,27 +22,27 @@
 
 /* Set the now playing bar to have a 96px height */
 .Root__now-playing-bar {
-height: 96px;
+    height: 96px;
 }
 
 .os-theme-spotify>.os-scrollbar-vertical, .os-theme-spotify>.os-scrollbar-horizontal {
-height: 0px;
-width: 0px;
-       background-color: transparent;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
 }
 
 /* Light grey on hover over player button */
 .player-controls__buttons > button:hover {
-cursor: pointer;
-color: #9898A6;
+    cursor: pointer;
+    color: #9898A6;
 }
 
 /* Make buttons clicky (and various other small changes */
 /* - Now Playing bar player buttons */
 .player-controls__buttons > button {
-cursor: pointer;
-color: white;
-       background-color: transparent;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
 }
 
 /* - Progress remaining time button */
@@ -52,19 +52,19 @@ color: white;
 
 /* - Queue, playing device, and full screen buttons */
 .ExtraControls button {
-cursor: pointer;
+    cursor: pointer;
 }
 
 /* - Context menu buttons */
 ul > li > a, ul > li > button, button > ul > li > button, li > div > a {
-color: var(--spice-text);
-cursor: pointer;
-        text-decoration: none;
+    color: var(--spice-text);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* - Set every instance of a button to have a pointer cursor */
 button {
-cursor: pointer;
+    cursor: pointer;
 }
 
 /* Fix coloring on hover of main content */
@@ -88,44 +88,44 @@ h1 {
 /* Set line height in Liked Songs content box
  * (unset doesn't work correctly here) */
 ._4927510282dae1bd4bce47f1df0bc361-scss {
-/*    line-height: 42px; */
+    /*    line-height: 42px; */
 }
 
 /* Hide device playing bar */
 .main-connectBar-connectBar {
-display: none;
+    display: none;
 }
 
 /* Display page name at the top bar at all times */
 section > div.main-entityHeader-container > div:not([class]), section > div > div.main-entityHeader-container > div:not([class]) {
-/*section:not[role="grid"] > div > div > div:not([class]), section > div > div:not([class]) { */
-display: none;
+    /*section:not[role="grid"] > div > div > div:not([class]), section > div > div:not([class]) { */
+    display: none;
 }
 
 /* Remove play button from header */
 header button.main-playButton-PlayButton {
-display: none;
+    display: none;
 }
 
 /* Remove transition from header text */
 .main-entityHeader-topbarTitle {
-transition: unset;
+    transition: unset;
 }
 
 /* Remove leftover margin space from forward button */
 header button.main-topBar-forward {
-margin-right: unset;
+    margin-right: unset;
 }
 
 /* Adjust search bar for margin space removed from forward button */
 .x-searchInput-searchInput {
-margin-left: 16px;
+    margin-left: 16px;
 }
 
 /* Remove background gradient from artist/playlist page */
 .main-actionBarBackground-background, .main-entityHeader-backgroundColor { 
     background-color: unset;
-background: unset;
+    background: unset;
 }
 
 /* Remove playlist art box shadow */
@@ -137,16 +137,16 @@ background: unset;
 
 /* Add enabled effect to now playing device button */
 .control-button--active {
-       color: var(--spice-button-active);
-       background-color: rgba(33, 254, 236, 0.16);
-       border-radius: 10px;
+    color: var(--spice-button-active);
+    background-color: rgba(33, 254, 236, 0.16);
+    border-radius: 10px;
 }
 
 /* Add enabled effect to shuffle button and repeat button */
 .main-shuffleButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="true"], .main-repeatButton-button[aria-checked="mixed"] {
-       color: var(--spice-button-active);
-       background-color: rgba(33, 254, 236, 0.16);
-       border-radius: 10px;
+    color: var(--spice-button-active);
+    background-color: rgba(33, 254, 236, 0.16);
+    border-radius: 10px;
 }
 
 /* Add extra spacing between queue and devices buttons */
@@ -156,7 +156,7 @@ background: unset;
 
 /* Remove dot from queue control button */
 .control-button--active-dot:after {
-display: none;
+    display: none;
 }
 
 /* Update connect a device screen active device color */
@@ -166,57 +166,57 @@ display: none;
 
 /* Remove connect a device header image */
 .connect-header {
-display: none;
+    display: none;
 }
 
 /* Roundify the now playing cover image and add styling */
 .cover-art .cover-art-image {
     border-radius: 4px;
-border: 2px solid #2a2a2a;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px -6px 24px;
+    border: 2px solid #2a2a2a;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -6px 24px;
 }
 
 /* Correct the active like button color */
 .main-addButton-button {
-color: var(--spice-button-active);
+    color: var(--spice-button-active);
 }
 
 /* Style slider knob */
 .progress-bar__slider {
-right: 5px;
-width: 4px;
-height: 12px;
-        border-radius: 50px;
-        box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
-transition: opacity .15s ease;
-            margin-left: -2px;
+    right: 5px;
+    width: 4px;
+    height: 12px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.4);
+    transition: opacity .15s ease;
+    margin-left: -2px;
 }
 
 /* Style extra slider area to be clicky */
 .progress-bar__fg_wrapper {
-cursor: pointer;
+    cursor: pointer;
 }
 
 /* Style volume button to be blue when not muted */ 
 .volume-bar__icon-button[title="Mute"] {
-color: var(--spice-button-active);
+    color: var(--spice-button-active);
 }
 
 /* Remove dot from shuffle button and repeat button */
 .main-repeatButton-button.main-repeatButton-on:after, .main-shuffleButton-button.main-shuffleButton-on:after {
-display: none;
+    display: none;
 }
 
 /* Color user button in all states */
 
 button._3e75c7f07bdce28b37b45a5cd74ff371-scss:hover, button._3e75c7f07bdce28b37b45a5cd74ff371-scss {
     background-color: #242528;
-color: white;
+    color: white;
 }
 
 /* Set big play button colors */
 .main-playButton-PlayButton {
-color: black;
+    color: black;
 }
 
 /* Set profile picture edit radius */
@@ -236,7 +236,7 @@ color: black;
 
 /* Set the equalizer GIF to a custom image with corrected color */
 .main-trackList-playingIcon {
-content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif");
+    content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4cc80-b6fc-11eb-9c6a-2ea1d5ae0a5c.gif");
 }
 
 /* Set the following button to be blue when user is following */
@@ -247,15 +247,15 @@ content: url("https://user-images.githubusercontent.com/37427166/118517517-e4b4c
 
 /* Set the artist page ranking colors */
 .artist-artistAbout-rank {
-background-color: white;
+    background-color: white;
 }
 
 .artist-artistAbout-rank div {
-color: black;
+    color: black;
 }
 
 /* Adjust the top sorting bar on playlists and albums to fit the width */
 .main-trackList-trackListHeader .main-trackList-trackListHeaderStuck {
-margin: 0 -34px 16px;
+    margin: 0 -34px 16px;
 }
 
