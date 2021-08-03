@@ -69,8 +69,8 @@ button {
 
 /* Fix coloring on hover of main content */
 .main-home-homeHeader {
-    background-color: transparent;
-    background-image: none;
+    background-color: transparent !important;
+    background-image: none !important;
 }
 
 /* Fix top bar coloring to match UI background */
@@ -124,8 +124,8 @@ header button.main-topBar-forward {
 
 /* Remove background gradient from artist/playlist page */
 .main-actionBarBackground-background, .main-entityHeader-backgroundColor { 
-    background-color: unset;
-    background: unset;
+    background-color: unset !important;
+    background: unset !important;
 }
 
 /* Remove playlist art box shadow */
