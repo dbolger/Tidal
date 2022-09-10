@@ -9,5 +9,5 @@ Tidal is a spicetify-cli theme based on TIDAL.
 The source code has comments indicating what changes are being made.
 
 ## Font
-The font mentioend above is named Nationale. You will have to source this on your own. If you do not have this font installed on your system, Spotify's defaults will be used.
+The font mentioned above is named Nationale. You will have to source this on your own. If you do not have this font installed on your system, Spotify's defaults will be used.
 
